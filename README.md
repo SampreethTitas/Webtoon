@@ -1,10 +1,11 @@
 # Webtoon
 Flask API to Create, Read, Delete Webtoons data from PostgreSQL
 
-#Setup
+# Setup
 Please create a Database and Assign DB URL into DATABASE_URL variable in .env file
+Make sure to install all the required modules from the 'requirements.txt'
 
-SQL Query for table creation:
+SQL Query for table creation(PostgreSQL):
 
 sql
 CREATE TABLE webtoons (
@@ -14,9 +15,9 @@ CREATE TABLE webtoons (
     characters TEXT[] NOT NULL
 );
 
- Make sure to install all the required modules from the 'requirements.txt'
+ 
 
-paths:
+# paths
   /webtoons:
     get:
       summary: Fetch all webtoons
